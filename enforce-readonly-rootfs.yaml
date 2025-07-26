@@ -10,6 +10,8 @@ spec:
         resources:
           kinds:
             - Pod
+          namespaces:
+            - sonarqube 
       validate:
         message: "Containers must use a read-only root filesystem."
         pattern:
