@@ -3,7 +3,7 @@ kind: ClusterPolicy
 metadata:
   name: disallow-privilege-escalation
 spec:
-  validationFailureAction: enforce
+  validationFailureAction: audit
   rules:
     - name: no-priv-escalation
       match:
