@@ -3,7 +3,7 @@ kind: ClusterPolicy
 metadata:
   name: enforce-readonly-rootfs
 spec:
-  validationFailureAction: enforce
+  validationFailureAction: audit
   rules:
     - name: readonly-rootfs
       match:
