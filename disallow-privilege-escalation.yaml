@@ -10,6 +10,7 @@ spec:
         resources:
           kinds:
             - Pod
+      skipBackgroundRequests: true  
       validate:
         message: "Privilege escalation is not allowed in containers."
         pattern:
